@@ -1,0 +1,61 @@
+//seccion de librerias
+#include<stdio.h>
+//declaracion de la funcion 
+int main(){
+	
+	//declaracion de variables
+	int Alumnos;
+	int CostoPA;
+	int Autobus;
+	char Op='\0';
+	
+	//Inicio de operaciones
+	printf("a) si son menos de 30 alumnos\n");
+	printf("b) si son de 30 a 49 alumnos\n");
+	printf("c) si son de 50 a 99 alumnos\n");
+	printf("d) si son 100 o mas alumnos\n");
+	scanf ("%c",&Op);
+	//Estructura selectiva
+	switch(Op){
+		//estructura para opcion invalida
+		default:
+			printf("Opcion no valida");
+	//caso para menos de 30 alumnos
+	case 'a':
+		printf("Ingresar numero de alumnos\n");
+		scanf("%d",&Alumnos);
+		CostoPA=4000/Alumnos;
+		Autobus=4000;
+		printf("El consto por alumno es: %d\n",CostoPA);
+		printf("El precio del autobus es de: %d\n",Autobus);
+		break;
+	//caso para mas de 30 a 49 alumnos
+	case 'b':
+		printf("Ingresar numero de alumnos\n");
+		scanf("%d",&Alumnos);
+		CostoPA=95;
+		Autobus=Alumnos*95;
+		printf("El consto por alumno es: %d\n",CostoPA);
+		printf("El precio del autobus es de: %d\n",Autobus);
+		break;
+	//caso para mas de 50 a 99 alumnos
+	case 'c':
+		printf("Ingresar numero de alumnos\n");
+		scanf("%d",&Alumnos);
+		CostoPA=70;
+		Autobus=Alumnos*70;
+		printf("El consto por alumno es: %d\n",CostoPA);
+		printf("El precio del autobus es de: %d\n",Autobus);
+		break;
+	//caso para 100 o mas alumnos	 
+	case 'd':
+		printf("Ingresar numero de alumnos\n");
+		scanf("%d",&Alumnos);
+		CostoPA=65;
+		Autobus=Alumnos*65;
+		printf("El consto por alumno es: %d\n",CostoPA);
+		printf("El precio del autobus es de: %d\n",Autobus);
+		break;
+	}
+	return 0;
+}
