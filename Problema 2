@@ -1,0 +1,30 @@
+//seccion de librerias
+#include<stdio.h>
+//declaracion de funcion
+int main(){
+	
+	//declaracion de variables
+	int Lapices;
+	int B;
+	int C;
+	int D;
+	
+	//inicio de operaciones
+	printf("Ingrese la cantidad de lapices que se desea comprar:\n");
+	scanf("%d", &Lapices);
+	//operaciones para cantidades menores de 1000
+	if (Lapices<=999){
+		B=90;
+		C=Lapices*B;
+		D=C/100;
+		printf("La cantidad que se debe de pagar es:%d pesos",D);
+	}
+	//operaciones para cantidades mayores o iguales a 1000
+	if (Lapices>=1000){
+		B=85;
+		C=Lapices*B;
+		D=C/100;
+		printf("La cantidad que se debe de pagar es:%d pesos",D);
+	}
+	return 0;
+}
