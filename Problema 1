@@ -1,0 +1,25 @@
+//seccion de librerias
+#include<stdio.h>
+//declaracion de funciones
+int main(){
+	
+	//declaracion de variables
+	int N;
+	
+	//inicio de operaciones
+	printf("ingresar Numero:\n");
+	scanf("%d", &N);
+	//evaluacion del dato para que sea diferente de 0
+	if (N==0){
+		printf("Ingresar otro numero");
+	}
+	//evaluacion del dato para determinar si es positivo
+	if (N>0){
+		printf("%d es positivo", N);	
+	}
+	//evaluacion del dato para determinar si es negativo
+	if (N<0){
+		printf("%d es negativo", N);
+	}
+	return 0;
+}
