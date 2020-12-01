@@ -1,0 +1,34 @@
+//seccion de librerias
+#include<stdio.h>
+//declaracion de funcion
+int main(){
+	
+	//declaracion de variables
+	float PrecioTraje;
+	float Descuento;
+	float DescuentoPre;
+	float PrecioDescuento;
+	
+	//inicio de operaciones
+	printf("Ingresar precio del traje:\n");
+	scanf("%f", &PrecioTraje);
+	//operaciones para trajes con precio igual o superior de 2500
+	if (PrecioTraje>=2500.00){
+		//descuento que se aplicara
+		Descuento=.15;
+		DescuentoPre=PrecioTraje*Descuento;
+		PrecioDescuento=PrecioTraje-DescuentoPre;
+		//impresion de datos de precio y descuento
+		printf("El total a pagar del traje es:%f \n El descuento que se aplico fue del 15 porciento",PrecioDescuento);
+	}
+	//operaciones para trajes con precio menor a 2500
+	else {
+		//descuento que se aplicara
+		Descuento=.08;
+		DescuentoPre=PrecioTraje*Descuento;
+		PrecioDescuento=PrecioTraje-DescuentoPre;
+		//impresion de datos de precio y descuento
+		printf("El total a pagar del traje es:%f \n El descuento que se aplico fue del 8 porciento",PrecioDescuento);
+	}
+	return 0;
+}
