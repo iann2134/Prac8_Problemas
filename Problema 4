@@ -1,0 +1,35 @@
+//seccion de biblioteca
+#include<stdio.h>
+//declaracion de la funcion
+int main(){
+	
+	//declaracion de variables
+	int A;
+	int B;
+	int C;
+	
+	//Inicio de operaciones
+	printf("Ingrese tres numeros:\n");
+	scanf("%d",&A);
+	scanf("%d",&B);
+	scanf("%d",&C);
+	//operaciones por si valor A es el mayor
+	if (A>B){
+		if (A>C){
+			printf("El numero mayor es: %d",A);
+		}
+	}
+	//operaciones por si valor B es el mayor
+	if (B>A){
+		if(B>C){
+			printf("El numero mayor es: %d",B);
+		}
+	}
+	//operaciones por si valor C es el mayor
+	if (C>A){
+		if(C>B){
+			printf("El numero mayor es: %d",C);
+		}
+	}
+	return 0;
+}
